@@ -2,6 +2,10 @@
   padding: 20px;
   border-radius: 20px;
   background-color: $color-solitude;
+
+  @include vp-1439 {
+    padding: 20px 30px;
+  }
 }
 
 .aside-nav__heading {
@@ -11,6 +15,12 @@
   margin: 0 0 25px;
   text-align: center;
   color: $color-verdun-green;
+
+  @include vp-1439 {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 0 20px;
+  }
 }
 
 .aside-nav__list {
@@ -20,12 +30,30 @@
   display: flex;
   flex-direction: column;
   gap: 23px;
+
+  @include vp-1439 {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
 }
 
 .aside-nav__link {
   display: flex;
   align-items: center;
   gap: 30px;
+
+  @include vp-1439 {
+    gap: 10px;
+  }
+
+  svg {
+    @include vp-1439 {
+      width: 30px;
+      height: 45px;
+    }
+  }
+
 }
 
 .aside-nav__link-text {
@@ -34,4 +62,9 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $color-verdun-green;
+
+  @include vp-1439 {
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
