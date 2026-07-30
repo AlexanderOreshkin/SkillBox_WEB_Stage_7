@@ -20,6 +20,7 @@
   }
 
   @include vp-767 {
+    padding: 30px 0 60px;
     background-image: url("../../images/index-form-bg-mobile.png");
   }
 
@@ -47,6 +48,11 @@
       text-align: center;
       margin: 0 0 30px;
     }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   &__inner {
@@ -61,6 +67,8 @@
 
     @include vp-767 {
       flex-direction: column;
+      gap: 27px;
+      margin: 0 0 35px;
     }
   }
 
@@ -82,6 +90,12 @@
       line-height: 24px;
       padding: 0 0 25px;
     }
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 22px;
+      margin: 0 0 20px;
+    }
   }
 
   &__form-wrapper {
@@ -96,6 +110,10 @@
     @include vp-1439 {
       width: 330px;
     }
+
+    @include vp-767 {
+      width: 100%;
+    }
   }
 
   &__btn {
@@ -106,6 +124,10 @@
     @include vp-1439 {
       width: 280px;
       margin: 0 auto 20px;
+    }
+
+    @include vp-767 {
+      width: 200px;
     }
   }
 
