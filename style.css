@@ -1017,6 +1017,7 @@ input[type=search]::-webkit-search-results-decoration {
   .application__inner {
     gap: 48px;
     margin: 0 0 36px;
+    justify-content: center;
   }
 }
 @media (max-width: 767px) {
